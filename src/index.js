@@ -9,8 +9,8 @@ import StartPage1Phone from "./StartPage1Phone";
 import AdminPage from "./AdminPage";
 import * as serviceWorker from './serviceWorker';
 
-// import VConsole from "vconsole";
-// const vConsole = new VConsole();
+import VConsole from "vconsole";
+const vConsole = new VConsole();
 
 function App() {
   return (

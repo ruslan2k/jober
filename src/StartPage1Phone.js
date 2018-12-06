@@ -15,7 +15,7 @@ import Api from "./Api";
 class StartPage1Phone extends Component {
   constructor(props) {
     super(props);
-    this.state = { code: "+375", phone: "" };
+    this.state = { code: "375", phone: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -25,7 +25,7 @@ class StartPage1Phone extends Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state.phone);
-    let name = `plus${this.state.code}-${this.state.phone}`
+    let name = `plus${this.state.code}${this.state.phone}`
     Api.registerUser(name);
   }
 
