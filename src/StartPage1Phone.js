@@ -25,7 +25,8 @@ class StartPage1Phone extends Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state.phone);
-    Api.registerUser(this.state.phone);
+    let name = `plus${this.state.code}-${this.state.phone}`
+    Api.registerUser(name);
   }
 
   render() {
@@ -53,6 +54,7 @@ class StartPage1Phone extends Component {
                     onChange={this.handleChange}
                     type="tel"
                     placeholder="Enter Phone"
+                    required=""
                   />
                 </CellBody>
               </FormCell>
