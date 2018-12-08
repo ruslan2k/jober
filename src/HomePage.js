@@ -8,19 +8,17 @@ import {
 import "weui";
 import "react-weui/build/packages/react-weui.css";
 
-import IconBBB from './Button-Blank-Blue-icon.png';
-import IconButton from './Button-Blank-Blue-icon.png';
-import IconMsg from './Button-Blank-Blue-icon.png';
-import IconArticle from './Button-Blank-Blue-icon.png';
 // import IconButton from '../home/images/icon_nav_button.png';
 // import IconMsg from '../home/images/icon_nav_msg.png';
 // import IconArticle from '../home/images/icon_nav_article.png';
+
+const IconGreenButton = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Green_dot.svg/450px-Green_dot.svg.png';
 
 export default class HomePage extends Component {
     render() {
         return (
             <Tab type="tabbar">
-                <TabBarItem icon={<img src={IconButton}/>} label="Tab1">
+                <TabBarItem icon={<img src={IconGreenButton}/>} label="Tab1">
                     <Article>
                         <h1>Page 1</h1>
                         <section>
@@ -35,7 +33,7 @@ export default class HomePage extends Component {
                         </section>
                     </Article>
                 </TabBarItem>
-                <TabBarItem icon={<img src={IconMsg}/>} label="Tab2">
+                <TabBarItem icon={<img src={IconGreenButton}/>} label="Tab2">
                     <Article>
                         <h1>Page 2</h1>
                         <section>
@@ -50,7 +48,7 @@ export default class HomePage extends Component {
                         </section>
                     </Article>
                 </TabBarItem>
-                <TabBarItem icon={<img src={IconArticle}/>} label="Tab3">
+                <TabBarItem icon={<img src={IconGreenButton}/>} label="Tab3">
                     <Article>
                         <h1>Page 3</h1>
                         <section>
