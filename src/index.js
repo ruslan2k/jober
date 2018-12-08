@@ -7,21 +7,20 @@ import "./styles.css";
 import StartPage from "./StartPage";
 import StartPage1Phone from "./StartPage1Phone";
 import AdminPage from "./AdminPage";
+import HomePage from "./HomePage";
 import * as serviceWorker from './serviceWorker';
 
 import VConsole from "vconsole";
-const vConsole = new VConsole();
+// const vConsole = new VConsole();
 
 function App() {
   return (
     <HashRouter>
       <div>
-        {/*<p className="admin">
-          <Link to="/admin">Admin</Link>
-        </p>*/}
         <Route exact path="/" component={StartPage1Phone} />
         <Route path="/admin" component={AdminPage} />
         <Route path="/start1" component={StartPage1Phone} />
+        <Route path="/homepage" component={HomePage} />
       </div>
     </HashRouter>
   );

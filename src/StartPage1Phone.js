@@ -12,6 +12,10 @@ import {
 } from "react-weui";
 import Api from "./Api";
 
+const savePhone = (phone) => {
+  localStorage.setItem('phone', phone)
+}
+
 class StartPage1Phone extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +30,9 @@ class StartPage1Phone extends Component {
     e.preventDefault();
     console.log(this.state.phone);
     let name = `plus${this.state.code}${this.state.phone}`
+    savePhone(name);
     Api.registerUser(name);
+    this.props.history.push("/homepage");
   }
 
   render() {
